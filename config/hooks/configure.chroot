@@ -2,6 +2,6 @@
 
 set -e
 
-#git clone https://github.com/ahdinosaur/dinOS.git
-#cd ./dinOS
-#./configure
+#git clone https://github.com/ahdinosaur/os-configure.git
+#cd ./os-configure
+#./configure.sh
