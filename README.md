@@ -6,9 +6,10 @@ beginnings of a personal OS build
 
 ## how to install
 
-clone this repo
+clone this repo and go inside
 
     git clone https://github.com/ahdinosaur/os-build.git
+    cd ./os-build
 
 install live-build
 
@@ -16,7 +17,7 @@ install live-build
 
 build .iso
 
-    [sudo] ./build.py
+    [sudo] make
     
 copy the .iso to your lucky flash drive
 
