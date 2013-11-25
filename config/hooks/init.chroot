@@ -1,0 +1,5 @@
+#!/bin/sh
+
+aptitude install -y live-config-systemd
+echo "I am aware that this is a very bad idea" | aptitude remove -y --purge live-config-sysvinit sysvinit
+aptitude install -y live-config live-config-systemd systemd systemd-sysv
