@@ -12,20 +12,22 @@ lb config noauto \
   --checksums sha1 \
   --debian-installer live \
   --debian-installer-distribution sid \
+  --debootstrap-options "--exclude sysvinit --include systemd,systemd-sysv" \
   --distribution sid \
   --firmware-binary false \
   --firmware-chroot false \
-  --mirror-bootstrap "http://http.us.debian.org/debian/" \
-  --mirror-binary "http://http.us.debian.org/debian/" \
-  --mirror-chroot "http://http.us.debian.org/debian/" \
-  --mirror-debian-installer "http://http.us.debian.org/debian/" \
+  --initsystem systemd \
+  --mirror-bootstrap "http://ftp.de.debian.org/debian/" \
+  --mirror-binary "http://ftp.de.debian.org/debian/" \
+  --mirror-chroot "http://ftp.de.debian.org/debian/" \
+  --mirror-debian-installer "http://ftp.de.debian.org/debian/" \
   --mode "debian" \
   --parent-archive-areas "main contrib non-free" \
   --parent-distribution sid \
   --parent-debian-installer-distribution sid \
-  --parent-mirror-bootstrap "http://http.us.debian.org/debian/" \
-  --parent-mirror-binary "http://http.us.debian.org/debian/" \
-  --parent-mirror-chroot "http://http.us.debian.org/debian/" \
-  --parent-mirror-debian-installer "http://http.us.debian.org/debian/" \
+  --parent-mirror-bootstrap "http://ftp.de.debian.org/debian/" \
+  --parent-mirror-binary "http://ftp.de.debian.org/debian/" \
+  --parent-mirror-chroot "http://ftp.de.debian.org/debian/" \
+  --parent-mirror-debian-installer "http://ftp.de.debian.org/debian/" \
   --system live \
   "${@}"

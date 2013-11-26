@@ -13,13 +13,13 @@ cache/
 
 chroot/
 chroot.packages.*
-chroot.files
 
 config/binary
 config/bootstrap
 config/chroot
 config/common
 config/source
+
 config/build
 
 source/
@@ -29,9 +29,8 @@ source*.tar*
 source*.contents
 source*.packages
 source*.zsync
-.build
 
+live-image*
 *.swp
-
-live-image-amd64.files
-live-image-amd64.packages
+chroot.files
+config/hooks/0*
