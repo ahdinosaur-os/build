@@ -6,10 +6,6 @@ lb config noauto \
   --apt aptitude \
   --architectures amd64 \
   --archive-areas "main contrib non-free" \
-  --binary-filesystem fat32 \
-  --bootappend-install "locales=en_US UTF-8" \
-  --bootappend-live "locales=en_US.UTF-8" \
-  --checksums sha1 \
   --debian-installer live \
   --debian-installer-distribution sid \
   --debootstrap-options "--exclude sysvinit --include systemd,systemd-sysv" \
@@ -17,17 +13,5 @@ lb config noauto \
   --firmware-binary false \
   --firmware-chroot false \
   --initsystem systemd \
-  --mirror-bootstrap "http://ftp.de.debian.org/debian/" \
-  --mirror-binary "http://ftp.de.debian.org/debian/" \
-  --mirror-chroot "http://ftp.de.debian.org/debian/" \
-  --mirror-debian-installer "http://ftp.de.debian.org/debian/" \
-  --mode "debian" \
-  --parent-archive-areas "main contrib non-free" \
-  --parent-distribution sid \
-  --parent-debian-installer-distribution sid \
-  --parent-mirror-bootstrap "http://ftp.de.debian.org/debian/" \
-  --parent-mirror-binary "http://ftp.de.debian.org/debian/" \
-  --parent-mirror-chroot "http://ftp.de.debian.org/debian/" \
-  --parent-mirror-debian-installer "http://ftp.de.debian.org/debian/" \
   --system live \
   "${@}"
