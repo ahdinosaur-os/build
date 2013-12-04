@@ -13,5 +13,9 @@ lb config noauto \
   --firmware-binary false \
   --firmware-chroot false \
   --initsystem systemd \
+  --mirror-bootstrap "http://ftp.de.debian.org/debian/" \
+  --mirror-binary "http://ftp.de.debian.org/debian/" \
+  --mirror-chroot "http://ftp.de.debian.org/debian/" \
+  --mirror-debian-installer "http://ftp.de.debian.org/debian/" \
   --system live \
   "${@}"

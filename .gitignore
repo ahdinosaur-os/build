@@ -5,6 +5,8 @@ binary*.tar*
 binary*.contents
 binary*.packages
 binary*.zsync
+binary*.udeb
+binary*.deb
 
 .build/
 build.log
