@@ -8,14 +8,14 @@ lb config noauto \
   --archive-areas "main contrib non-free" \
   --debian-installer live \
   --debian-installer-distribution sid \
-  --debootstrap-options "--exclude sysvinit --include systemd,systemd-sysv" \
+  --debootstrap-options "--include systemd,systemd-sysv" \
   --distribution sid \
   --firmware-binary false \
   --firmware-chroot false \
   --initsystem systemd \
-  --mirror-bootstrap "http://ftp.de.debian.org/debian/" \
-  --mirror-binary "http://ftp.de.debian.org/debian/" \
-  --mirror-chroot "http://ftp.de.debian.org/debian/" \
-  --mirror-debian-installer "http://ftp.de.debian.org/debian/" \
+  --mirror-bootstrap "http://ftp.us.debian.org/debian/" \
+  --mirror-binary "http://ftp.us.debian.org/debian/" \
+  --mirror-chroot "http://ftp.us.debian.org/debian/" \
+  --mirror-debian-installer "http://ftp.us.debian.org/debian/" \
   --system live \
   "${@}"
