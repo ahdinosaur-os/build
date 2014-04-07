@@ -1,15 +1,15 @@
-# os-build
+# build
 
 ### EXPERIMENTAL aka NOT WORKING
 
-beginnings of a personal OS build
+personal OS builder
 
 ## how to install
 
 clone this repo and go inside
 
-    git clone https://github.com/ahdinosaur/os-build.git
-    cd ./os-build
+    git clone https://github.com/ahdinosaur-os/build.git
+    cd ./build
 
 install live-build
 
