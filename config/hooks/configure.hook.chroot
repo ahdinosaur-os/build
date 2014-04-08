@@ -2,6 +2,9 @@
 
 set -e
 
-git clone https://github.com/ahdinosaur-os/main.git
-cd ./main
+if [ ! -d "root/main" ]
+then
+  git clone https://github.com/ahdinosaur-os/main.git root/main
+fi
+cd root/main
 ./index.sh
